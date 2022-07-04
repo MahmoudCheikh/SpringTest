@@ -1,1 +1,33 @@
-<p>update-etudiant works!</p>
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Modifier etudiant </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Nom</label>
+                        <input type="text" class="form-control" id="nom" [(ngModel)]="etudiant.nom"
+                            name="nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Prenom</label>
+                        <input type="text" class="form-control" id="prenom" [(ngModel)]="etudiant.prenom"
+                            name="prenom">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Date de Naissance</label>
+                        <input type="text" class="form-control" id="dateDeNaissance" [(ngModel)]="etudiant.dateDeNaissance"
+                            name="dateDeNaissance">
+                    </div>
+                    <br />
+                    <button class="btn btn-success" type="submit">Confirmer</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
