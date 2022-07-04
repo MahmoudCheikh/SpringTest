@@ -8,7 +8,7 @@ import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Employee")
+@Document(collection = "Etudiant")
 public class Etudiant {
 
     @Transient
@@ -65,7 +65,7 @@ public class Etudiant {
 
     @Override
     public String toString() {
-        return "Employee [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", dateDeNaissance=" + dateDeNaissance +
+        return "Etudiant [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", dateDeNaissance=" + dateDeNaissance +
             "]";
     }
 }
