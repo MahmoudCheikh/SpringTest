@@ -15,6 +15,7 @@ export class ListEtudiantComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
+    this.getEtudiants();
   }
 
   private getEtudiants() {
